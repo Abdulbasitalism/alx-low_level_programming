@@ -10,14 +10,14 @@
  * Return: void
  */
 
-oid print_numbers(const char *separator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int a;
 	va_list numbers;
 
-	va_start(numbbers, n);
+	va_start(numbers, n);
 
-	for (a 0; a <n; a++)
+	for (a = 0; a < n; a++)
 	{
 		printf("%d", va_arg(numbers, int));
 		if (a < n - 1 && separator != NULL)
